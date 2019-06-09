@@ -4,8 +4,9 @@ end
 welcome
 
 def deal_card
-rand(1..11)
+number = rand(1..11)
 end
+
 
 def display_card_total(number)
 puts "Your cards add up to #{number}"
@@ -24,9 +25,11 @@ puts "Sorry, you hit #{number}. Thanks for playing!"
 end
 
 def initial_round
-deal_card 
-deal_card 
-display_card_total 
+card1 = deal_card 
+card2 = deal_card
+sum = card1 + card2
+puts sum
+display_card_total(sum)
 
 end
 
