@@ -36,9 +36,9 @@ def hit?(card_total)
   prompt_user #asks the player if they want to hit or stay
   user_input = get_user_input #sets a variable to use for your if/else statement
   if user_input == "h"
-    sum += deal_card #increase your former total by the new number given by dealing another card
+    card_total += deal_card #increase your former total by the new number given by dealing another card
   elsif user_input == "s"
-    sum #return the number and prompt user to hit again
+    card_total #return the number and prompt user to hit again
   else
     invalid_command
   end
