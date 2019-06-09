@@ -1,6 +1,7 @@
 def welcome
  puts "Welcome to the Blackjack Table."
 end
+welcome
 
 def deal_card
 rand(1..11)
