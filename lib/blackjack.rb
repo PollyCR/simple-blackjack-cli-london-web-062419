@@ -41,7 +41,7 @@ end
 end
 
 def invalid_command
-if input != "h" | | "s" 
+if input != "h" || "s" 
   puts "Please enter a valid command"
   prompt_user
 end 
