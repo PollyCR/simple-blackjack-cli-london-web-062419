@@ -37,7 +37,7 @@ prompt_user
 get_user_input
 if input = h 
   deal_card 
-elsif input = s 
+end 
 end
 
 def invalid_command
