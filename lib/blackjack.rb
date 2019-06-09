@@ -37,12 +37,12 @@ prompt_user
 get_user_input
 if input = "h"
   deal_card 
-end 
+elsif input != "h" || "s" 
+invalid_command 
+end
 end
 
 def invalid_command
-  get_user_input
-if input != "h" || "s" 
   puts "Please enter a valid command"
   prompt_user
 end 
