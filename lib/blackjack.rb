@@ -32,8 +32,12 @@ display_card_total(sum)
 return sum
 end
 
-def hit?
-  # code hit? here
+def hit?(number)
+prompt_user
+get_user_input
+if input = h 
+  deal_card 
+elsif input = s 
 end
 
 def invalid_command
